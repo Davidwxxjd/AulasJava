@@ -9,8 +9,8 @@ public class Exemplos {
         float altura;
         byte idade;
 
-          anoNasc  = 1984;
-          peso = 97;
+          anoNasc  = 2004;
+          peso = 99;
           sexo = 'M';
           altura = 1.8f;
           idade = 20;
