@@ -1,6 +1,6 @@
-package exercicios;
+package aula02_Variaveis.exercicios;
 
-public class Exercicio09_SetimoExercicio {
+public class Exercicio09_ConversaoDeTipos {
     public static void main(String[] args) {
 
 
