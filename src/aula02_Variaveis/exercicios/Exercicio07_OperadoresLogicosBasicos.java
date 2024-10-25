@@ -2,12 +2,17 @@ package aula02_Variaveis.exercicios;
 
 public class Exercicio07_OperadoresLogicosBasicos {
     public static void main(String[] args) {
-        int nota1, nota2, nota3;
-        nota1 = 8;
-        nota2 = 5;
-        nota3 = 7;
 
-        int somaTotal = nota1 + nota2 + nota3;
-        System.out.println("Soma total das notas: " + somaTotal);
+        boolean verdade = true;
+        boolean falso = false;
+        boolean Verdade = true;
+
+        System.out.println("Ambas condições são verdadeiras? " + (verdade && falso));
+        System.out.println("Ambas condições são verdadeiras? " + (verdade && Verdade));
+        System.out.println("Ambas condições são verdadeiras? " + (falso && Verdade));
+
+        System.out.println("Alguma condição é falsa? " + (verdade || falso));
+        System.out.println("Essa comparação não apresenta condição falsa? " + (verdade || Verdade));
+        System.out.println("Há alguma condição verdadeira nessa comparação? " + (falso || Verdade));
     }
 }
