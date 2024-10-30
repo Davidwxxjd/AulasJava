@@ -17,7 +17,7 @@ public class Exercicio02_DescontoEmCompra {
 
         double valorFinal = valorCompra - desconto;
 
-        System.out.printf("O valor final a ser pago é: R$ %.2f", valorFinal);
+        System.out.print("O valor final a ser pago é: R$ " + valorFinal);
 
         scanner.close();
     }

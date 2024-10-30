@@ -1,4 +1,4 @@
-package aula06.InserirNomeDaProxAula.exercicios;
+package aula06_MatrizesVetores.exercicios;
 
 public class Exercicio09 {
     public static void main(String[] args) {
