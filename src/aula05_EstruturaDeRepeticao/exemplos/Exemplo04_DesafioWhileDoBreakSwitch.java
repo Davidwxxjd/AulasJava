@@ -33,6 +33,8 @@ public class Exemplo04_DesafioWhileDoBreakSwitch {
                     System.out.println("Opção Inválida!!!");
             }
         } while (opcao != 4);
+
+        scanner.close();
     }
 }
 

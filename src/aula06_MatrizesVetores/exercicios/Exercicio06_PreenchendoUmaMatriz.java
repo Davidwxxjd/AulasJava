@@ -22,6 +22,8 @@ public class Exercicio06_PreenchendoUmaMatriz {
                 System.out.print(matriz[i][j] + " ");
             }
             System.out.println();
+
+            scanner.close();
         }
     }
 }

@@ -23,6 +23,8 @@ public class Exercicio05_VetorDeStrings {
             System.out.println("O nome " + nomeProcurado + " foi encontrado no vetor.");
         } else {
             System.out.println("O nome " + nomeProcurado + " não foi encontrado no vetor.");
+
+            scanner.close();
         }
     }
 }

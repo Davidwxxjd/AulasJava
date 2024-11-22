@@ -27,5 +27,6 @@ public class Exercicio09_JogoDeAdivinhacao {
 
         System.out.println("Parabéns! Você acertou em " + tentativas + "tentativas. Jogue novamente! :D");
 
+        scanner.close();
     }
 }

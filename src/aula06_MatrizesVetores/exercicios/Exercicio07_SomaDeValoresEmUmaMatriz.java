@@ -18,5 +18,7 @@ public class Exercicio07_SomaDeValoresEmUmaMatriz {
         }
 
         System.out.println("\nA soma de todos os elementos da matriz é: " + soma);
+
+        scanner.close();
     }
 }

@@ -17,5 +17,7 @@ public class Exercicio04_MediaDeNotasDouble {
         }
         double media = soma / notas.length;
         System.out.println("A média das notas é: " + media);
+
+        scanner.close();
     }
 }

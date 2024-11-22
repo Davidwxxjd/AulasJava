@@ -18,5 +18,7 @@ public class Exercicio01_SomaDeElementosInteirosDeUmVetor {
         }
 
         System.out.println("A soma dos números é: " + soma);
+
+        scanner.close();
     }
 }

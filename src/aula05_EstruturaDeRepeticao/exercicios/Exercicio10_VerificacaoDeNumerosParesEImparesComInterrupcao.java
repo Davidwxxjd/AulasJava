@@ -33,6 +33,8 @@ public class Exercicio10_VerificacaoDeNumerosParesEImparesComInterrupcao {
         System.out.println("Números impares:");
         for (int impar : impares) {
             System.out.print(impar + " ");
+
+            scanner.close();
         }
     }
 }

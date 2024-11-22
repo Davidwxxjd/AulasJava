@@ -26,6 +26,8 @@ public class Exercicio02_BuscaDeCaracteresEmUmValor {
         }
         if (!encontrado) {
             System.out.println("A letra ' " + letra + " ' não foi encontrada no vetor.");
+
+            scanner.close();
         }
     }
 }

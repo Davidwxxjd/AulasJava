@@ -19,5 +19,7 @@ public class Exercicio03_ContagemDeValoresBooleanos {
             }
         }
         System.out.println("Quantidade de valores verdadeiros: " + contadorVerdadeiros);
+
+        scanner.close();
     }
 }

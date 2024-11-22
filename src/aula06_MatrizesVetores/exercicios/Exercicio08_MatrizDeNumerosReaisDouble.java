@@ -22,6 +22,8 @@ public class Exercicio08_MatrizDeNumerosReaisDouble {
                 somaLinha += matriz[i][j];
             }
             System.out.println("A soma da linha " + (i + 1) + " é: " + somaLinha);
+
+            scanner.close();
         }
     }
 }

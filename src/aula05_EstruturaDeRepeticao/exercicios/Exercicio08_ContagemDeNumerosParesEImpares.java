@@ -20,5 +20,7 @@ public class Exercicio08_ContagemDeNumerosParesEImpares {
 
         System.out.println("Quantidade de números pares: " + pares);
         System.out.println("Quantidade de números impares: " + impares);
+
+        scanner.close();
     }
 }
