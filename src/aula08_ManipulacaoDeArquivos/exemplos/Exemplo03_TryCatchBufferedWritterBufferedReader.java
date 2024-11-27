@@ -2,7 +2,7 @@ package aula08_ManipulacaoDeArquivos.exemplos;
 
 import java.io.*;
 
-public class Exemplo03 {
+public class Exemplo03_TryCatchBufferedWritterBufferedReader {
     public static void main(String[] args) {
 
         File arquivo = new File("src\\aula08_ManipulacaoDeArquivos\\exemplos\\arquivo.txt");
@@ -14,7 +14,7 @@ public class Exemplo03 {
 
             BufferedReader bufferedReader = new BufferedReader(new FileReader(arquivo));
             String linha;
-            while ((linha = bufferedReader.readLine())!=null) {
+            while ((linha = bufferedReader.readLine()) != null) {
                 System.out.println(linha);
             }
             bufferedReader.close();

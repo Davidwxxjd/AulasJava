@@ -11,13 +11,12 @@ public class Exercicio09_DeterminacaoDeTurno {
 
         if (hora >= 5 && hora < 12) {
             System.out.println("Manhã");
-        } else if (hora >= 12 && hora <18) {
+        } else if (hora >= 12 && hora < 18) {
             System.out.println("Tarde");
         } else if (hora >= 18 && hora < 22) {
             System.out.println("Noite");
-        } else {
+        } else if (hora >= 23 && hora < 5 && hora < 24) {
             System.out.println("Madrugada");
         }
-            scanner.close();
-        }
     }
+}

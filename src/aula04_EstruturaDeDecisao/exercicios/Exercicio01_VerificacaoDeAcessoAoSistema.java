@@ -10,9 +10,9 @@ public class Exercicio01_VerificacaoDeAcessoAoSistema {
         int idade = scanner.nextInt();
 
         if (idade >= 18) {
-            System.out.println("Acesso Permitido");
+            System.out.println("Acesso Permitido!");
         } else {
-            System.out.println("Acesso negado. Você precisa ter 18 anos ou mais para visualizar este conteúdo");
+            System.out.println("Acesso negado. Você precisa ter 18 anos ou mais para visualizar este conteúdo!");
         }
         scanner.close();
     }

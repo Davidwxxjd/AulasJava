@@ -7,7 +7,7 @@ public class Exemplo02_SemaforoElseIf {
         Scanner scanner = new Scanner(System.in);
         String corSemaforo;
 
-        System.out.println("Digite a cor do semáforo:");
+        System.out.println("Digite a cor do semáforo: ");
         corSemaforo = scanner.nextLine();
         if (corSemaforo.equals("verde") || corSemaforo.equals("Verde")) {
 

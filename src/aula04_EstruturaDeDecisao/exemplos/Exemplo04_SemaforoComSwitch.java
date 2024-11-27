@@ -6,7 +6,7 @@ public class Exemplo04_SemaforoComSwitch {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String corSemaforo;
-        System.out.println("Digite a cor do semáforo");
+        System.out.println("Digite a cor do semáforo: ");
         corSemaforo = scanner.nextLine();
 
         switch (corSemaforo) {
@@ -22,7 +22,7 @@ public class Exemplo04_SemaforoComSwitch {
                 System.out.println("Pare!");
                 break;
             default:
-                System.out.println("Nunca vi semáforo desta cor");
+                System.out.println("Nunca vi semáforo desta cor!");
         }
         scanner.close();
     }

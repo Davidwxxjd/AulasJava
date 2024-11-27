@@ -7,7 +7,7 @@ public class Exemplo05_MenuComSwitch {
         Scanner scanner = new Scanner(System.in);
         int opcao;
 
-        System.out.println("Escolha uma opção:");
+        System.out.println("Escolha uma opção: ");
         System.out.println("\t1 - para opção 1");
         System.out.println("\t2 - para opção 2");
         System.out.println("\t3 - para opção 3");

@@ -37,4 +37,3 @@ public class Exemplo04_DesafioWhileDoBreakSwitch {
         scanner.close();
     }
 }
-

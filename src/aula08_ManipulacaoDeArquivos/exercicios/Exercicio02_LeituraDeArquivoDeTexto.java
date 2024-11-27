@@ -1,4 +1,4 @@
 package aula08_ManipulacaoDeArquivos.exercicios;
 
-public class Exercicio01 {
+public class Exercicio02_LeituraDeArquivoDeTexto {
 }

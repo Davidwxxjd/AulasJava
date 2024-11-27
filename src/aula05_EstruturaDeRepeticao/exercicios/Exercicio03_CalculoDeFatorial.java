@@ -13,7 +13,7 @@ public class Exercicio03_CalculoDeFatorial {
             System.out.println("Número inválido! Por favor, digite um número inteiro positivo.");
         } else {
             int fatorial = 1;
-                    int i = 1;
+            int i = 1;
 
             do {
                 fatorial *= i;
@@ -21,7 +21,7 @@ public class Exercicio03_CalculoDeFatorial {
             } while (i <= numero);
 
             System.out.println("O fatorial de " + numero + " é: " + fatorial);
-            }
-        scanner.close();
         }
+        scanner.close();
     }
+}
