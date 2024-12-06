@@ -4,9 +4,9 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class Desafio2 {
-    static String[] cabecalho = {"ID", "Nome", "Telefone", "Email"};
-    static String[][] matrizCadastro;
     static Scanner scanner = new Scanner(System.in);
+    static String[] cabecalho = {"ID", "Nome", "Telefone", "Email"};
+    static String[][] matrizCadastro = {{"", ""}};
 
     public static void main(String[] args) {
         matrizCadastro[0] = cabecalho;
@@ -52,20 +52,22 @@ public class Desafio2 {
     }
 
     public static void exibirUsuarios() {
-        String tabela = "";
-        for (String[] linha : matrizCadastro) {
-            for (int coluna = 0; coluna < linha.length; coluna++) {
-                tabela += linha[coluna] + "\t\t";
+        StringBuilder tabela = new StringBuilder();
+        for (String[] linhas : matrizCadastro) {
+            for (int colunas = 0; colunas < linhas.length; colunas++) {
+                int tamanhoColuna = colunas == 0 ? 5 : (colunas == 2 ? 10 : 25);
+                tabela.append(String.format("%-" + tamanhoColuna + "s|", linhas[colunas]));
+
             }
-            tabela += "\n";
+            tabela.append("\n");
         }
         System.out.println(tabela);
     }
 
     public static void cadastrarUsuarios() {
         System.out.println("Quantas pessoas você deseja cadastrar: ");
-        int qtdPessoas = scanner.nextInt();
-        scanner.nextLine();
+       int quantidadePessoas = scanner.nextInt();
+       scanner.nextLine();
 
         String[][] novaMatriz = new String[matrizCadastro.length + 1][cabecalho.length];
         for (int linha = 0; linha < matrizCadastro.length; linha++) {
@@ -80,7 +82,7 @@ public class Desafio2 {
 
             for (int coluna = 1; coluna < cabecalho.length; coluna++) {
                 System.out.print(cabecalho[coluna] + ": ");
-                novaMatriz[linha][1] = scanner.nextLine();
+                novaMatriz[linha][coluna] = scanner.nextLine();
             }
 
         }
@@ -88,10 +90,23 @@ public class Desafio2 {
 
     }
 
-        public static void atualizarUsuarios() {
-        }
+    public static void atualizarUsuarios() {
+        exibirUsuarios();
 
-        public static void deletarUsuarios() {
-        }
+        System.out.println("\nDigite o ID do usuário que deseja atualizar:");
+        int idEscolhido = scanner.nextInt();
+        scanner.nextLine();
+        System.out.print("Atualize as informações a seguir: ");
 
+        System.out.println(cabecalho[0] + " - " + idEscolhido);
+        for (int coluna = 1; coluna < cabecalho.length; coluna++) {
+            System.out.println(cabecalho[coluna] + ":  ");
+            matrizCadastro[idEscolhido][coluna] = scanner.nextLine();
+        }
+        exibirUsuarios();
     }
+
+    public static void deletarUsuarios() {
+    }
+
+}
