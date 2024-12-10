@@ -66,8 +66,8 @@ public class Desafio2 {
 
     public static void cadastrarUsuarios() {
         System.out.println("Quantas pessoas você deseja cadastrar: ");
-       int quantidadePessoas = scanner.nextInt();
-       scanner.nextLine();
+        int quantidadePessoas = scanner.nextInt();
+        scanner.nextLine();
 
         String[][] novaMatriz = new String[matrizCadastro.length + 1][cabecalho.length];
         for (int linha = 0; linha < matrizCadastro.length; linha++) {
@@ -107,6 +107,24 @@ public class Desafio2 {
     }
 
     public static void deletarUsuarios() {
-    }
+        exibirUsuarios();
+        System.out.println("\nDigite o Id do usuário que deseja deletar o registro: ");
+        int idEscolhido = scanner.nextInt();
+        scanner.nextLine();
 
+        String[][] novaMatriz = new String[matrizCadastro.length - 1][cabecalho.length];
+        novaMatriz[0] = cabecalho;
+        for (int linha = 1, idNovaMatriz = 1 ; linha < matrizCadastro.length; linha++) {
+            if (linha==idEscolhido){
+                continue;
+
+            }
+            novaMatriz[idNovaMatriz] = Arrays.copyOf(matrizCadastro[linha], matrizCadastro[linha].length);
+            novaMatriz[idNovaMatriz][0]=String.valueOf(idNovaMatriz);
+            idNovaMatriz++;
+        }
+        matrizCadastro = novaMatriz;
+        System.out.println("Usuário deletado com sucesso! :D");
+        exibirUsuarios();
+    }
 }
